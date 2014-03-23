@@ -1,0 +1,628 @@
+Array
+(
+    [build_info] => Array
+        (
+            [args] => Array
+                (
+                )
+
+            [form_id] => engine_engine_form
+        )
+
+    [temporary] => Array
+        (
+        )
+
+    [programmed] => 
+    [programmed_bypass_access_check] => 1
+    [cache] => 
+    [rebuild] => 
+    [rebuild_info] => Array
+        (
+        )
+
+    [redirect] => 
+    [submitted] => 1
+    [executed] => 
+    [method] => post
+    [groups] => Array
+        (
+            [name] => Array
+                (
+                    [#group_exists] => 1
+                )
+
+        )
+
+    [buttons] => Array
+        (
+            [0] => Array
+                (
+                    [#type] => submit
+                    [#value] => Submit
+                    [#input] => 1
+                    [#name] => op
+                    [#button_type] => submit
+                    [#executes_submit_callback] => 1
+                    [#limit_validation_errors] => 
+                    [#process] => Array
+                        (
+                            [0] => ajax_process_form
+                        )
+
+                    [#theme_wrappers] => Array
+                        (
+                            [0] => button
+                        )
+
+                    [#defaults_loaded] => 1
+                    [#tree] => 
+                    [#parents] => Array
+                        (
+                            [0] => submit
+                        )
+
+                    [#array_parents] => Array
+                        (
+                            [0] => submit
+                        )
+
+                    [#weight] => 0.002
+                    [#processed] => 
+                    [#required] => 
+                    [#attributes] => Array
+                        (
+                        )
+
+                    [#title_display] => before
+                    [#id] => edit-submit
+                )
+
+        )
+
+    [input] => Array
+        (
+            [first] => Tommy
+            [last] => Blo!eh...
+            [year_of_birth] => 2000
+            [op] => Submit
+            [form_build_id] => form-IUz0syn7oTn17dgw7LwzwvTnlJUo4JBUp-0zc3vetgM
+            [form_token] => CJwG1RM1gpYofZ7Ty7oBDrExjKWEX--H4bjfkiv0wdI
+            [form_id] => engine_engine_form
+        )
+
+    [values] => Array
+        (
+            [first] => Tommy
+            [last] => Blo!eh...
+            [year_of_birth] => 2000
+            [submit] => Submit
+            [form_build_id] => form-U8PHKqmTCBEU6CbIh9fGCu6diZAbQgjNOL31HsqFC7o
+            [form_token] => CJwG1RM1gpYofZ7Ty7oBDrExjKWEX--H4bjfkiv0wdI
+            [form_id] => engine_engine_form
+            [op] => Submit
+        )
+
+    [complete form] => Array
+        (
+            [name] => Array
+                (
+                    [#type] => fieldset
+                    [#title] => Name
+                    [#collapsible] => 1
+                    [#collapsed] => 
+                    [first] => Array
+                        (
+                            [#type] => textfield
+                            [#title] => First name
+                            [#required] => 1
+                            [#default_value] => First name
+                            [#description] => Please enter your first name.
+                            [#size] => 20
+                            [#maxlength] => 20
+                            [#input] => 1
+                            [#autocomplete_path] => 
+                            [#process] => Array
+                                (
+                                    [0] => ajax_process_form
+                                )
+
+                            [#theme] => textfield
+                            [#theme_wrappers] => Array
+                                (
+                                    [0] => form_element
+                                )
+
+                            [#defaults_loaded] => 1
+                            [#tree] => 
+                            [#parents] => Array
+                                (
+                                    [0] => first
+                                )
+
+                            [#array_parents] => Array
+                                (
+                                    [0] => name
+                                    [1] => first
+                                )
+
+                            [#weight] => 0
+                            [#processed] => 1
+                            [#attributes] => Array
+                                (
+                                )
+
+                            [#title_display] => before
+                            [#id] => edit-first
+                            [#name] => first
+                            [#value] => Tommy
+                            [#needs_validation] => 1
+                            [#ajax_processed] => 
+                            [#sorted] => 1
+                            [#validated] => 1
+                        )
+
+                    [last] => Array
+                        (
+                            [#type] => textfield
+                            [#title] => Last name
+                            [#required] => 1
+                            [#input] => 1
+                            [#size] => 60
+                            [#maxlength] => 128
+                            [#autocomplete_path] => 
+                            [#process] => Array
+                                (
+                                    [0] => ajax_process_form
+                                )
+
+                            [#theme] => textfield
+                            [#theme_wrappers] => Array
+                                (
+                                    [0] => form_element
+                                )
+
+                            [#defaults_loaded] => 1
+                            [#tree] => 
+                            [#parents] => Array
+                                (
+                                    [0] => last
+                                )
+
+                            [#array_parents] => Array
+                                (
+                                    [0] => name
+                                    [1] => last
+                                )
+
+                            [#weight] => 0.001
+                            [#processed] => 1
+                            [#attributes] => Array
+                                (
+                                )
+
+                            [#title_display] => before
+                            [#id] => edit-last
+                            [#name] => last
+                            [#value] => Blo!eh...
+                            [#needs_validation] => 1
+                            [#ajax_processed] => 
+                            [#sorted] => 1
+                            [#validated] => 1
+                        )
+
+                    [#value] => 
+                    [#process] => Array
+                        (
+                            [0] => form_process_fieldset
+                            [1] => ajax_process_form
+                        )
+
+                    [#pre_render] => Array
+                        (
+                            [0] => form_pre_render_fieldset
+                        )
+
+                    [#theme_wrappers] => Array
+                        (
+                            [0] => fieldset
+                        )
+
+                    [#defaults_loaded] => 1
+                    [#tree] => 
+                    [#parents] => Array
+                        (
+                            [0] => name
+                        )
+
+                    [#array_parents] => Array
+                        (
+                            [0] => name
+                        )
+
+                    [#weight] => 0
+                    [#processed] => 1
+                    [#required] => 
+                    [#attributes] => Array
+                        (
+                            [class] => Array
+                                (
+                                    [0] => collapsible
+                                )
+
+                        )
+
+                    [#title_display] => before
+                    [#id] => edit-name
+                    [#groups] => Array
+                        (
+                            [name] => Array
+                                (
+                                    [#group_exists] => 1
+                                )
+
+                        )
+
+                    [#attached] => Array
+                        (
+                            [library] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [0] => system
+                                            [1] => drupal.form
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [0] => system
+                                            [1] => drupal.collapse
+                                        )
+
+                                )
+
+                        )
+
+                    [#ajax_processed] => 
+                    [#sorted] => 1
+                    [#validated] => 1
+                )
+
+            [year_of_birth] => Array
+                (
+                    [#type] => textfield
+                    [#title] => Year of birth
+                    [#description] => Format is "YYYY"
+                    [#input] => 1
+                    [#size] => 60
+                    [#maxlength] => 128
+                    [#autocomplete_path] => 
+                    [#process] => Array
+                        (
+                            [0] => ajax_process_form
+                        )
+
+                    [#theme] => textfield
+                    [#theme_wrappers] => Array
+                        (
+                            [0] => form_element
+                        )
+
+                    [#defaults_loaded] => 1
+                    [#tree] => 
+                    [#parents] => Array
+                        (
+                            [0] => year_of_birth
+                        )
+
+                    [#array_parents] => Array
+                        (
+                            [0] => year_of_birth
+                        )
+
+                    [#weight] => 0.001
+                    [#processed] => 1
+                    [#required] => 
+                    [#attributes] => Array
+                        (
+                        )
+
+                    [#title_display] => before
+                    [#id] => edit-year-of-birth
+                    [#name] => year_of_birth
+                    [#value] => 2000
+                    [#needs_validation] => 1
+                    [#ajax_processed] => 
+                    [#sorted] => 1
+                    [#validated] => 1
+                )
+
+            [submit] => Array
+                (
+                    [#type] => submit
+                    [#value] => Submit
+                    [#input] => 1
+                    [#name] => op
+                    [#button_type] => submit
+                    [#executes_submit_callback] => 1
+                    [#limit_validation_errors] => 
+                    [#process] => Array
+                        (
+                            [0] => ajax_process_form
+                        )
+
+                    [#theme_wrappers] => Array
+                        (
+                            [0] => button
+                        )
+
+                    [#defaults_loaded] => 1
+                    [#tree] => 
+                    [#parents] => Array
+                        (
+                            [0] => submit
+                        )
+
+                    [#array_parents] => Array
+                        (
+                            [0] => submit
+                        )
+
+                    [#weight] => 0.002
+                    [#processed] => 1
+                    [#required] => 
+                    [#attributes] => Array
+                        (
+                        )
+
+                    [#title_display] => before
+                    [#id] => edit-submit
+                    [#ajax_processed] => 
+                    [#sorted] => 1
+                    [#validated] => 1
+                )
+
+            [#form_id] => engine_engine_form
+            [#type] => form
+            [#build_id] => form-U8PHKqmTCBEU6CbIh9fGCu6diZAbQgjNOL31HsqFC7o
+            [form_build_id] => Array
+                (
+                    [#type] => hidden
+                    [#value] => form-U8PHKqmTCBEU6CbIh9fGCu6diZAbQgjNOL31HsqFC7o
+                    [#id] => form-U8PHKqmTCBEU6CbIh9fGCu6diZAbQgjNOL31HsqFC7o
+                    [#name] => form_build_id
+                    [#parents] => Array
+                        (
+                            [0] => form_build_id
+                        )
+
+                    [#input] => 1
+                    [#process] => Array
+                        (
+                            [0] => ajax_process_form
+                        )
+
+                    [#theme] => hidden
+                    [#defaults_loaded] => 1
+                    [#tree] => 
+                    [#array_parents] => Array
+                        (
+                            [0] => form_build_id
+                        )
+
+                    [#weight] => 0.003
+                    [#processed] => 1
+                    [#required] => 
+                    [#attributes] => Array
+                        (
+                        )
+
+                    [#title_display] => before
+                    [#ajax_processed] => 
+                    [#sorted] => 1
+                    [#validated] => 1
+                )
+
+            [#token] => engine_engine_form
+            [form_token] => Array
+                (
+                    [#id] => edit-engine-engine-form-form-token
+                    [#type] => token
+                    [#default_value] => CJwG1RM1gpYofZ7Ty7oBDrExjKWEX--H4bjfkiv0wdI
+                    [#parents] => Array
+                        (
+                            [0] => form_token
+                        )
+
+                    [#input] => 1
+                    [#theme] => hidden
+                    [#defaults_loaded] => 1
+                    [#tree] => 
+                    [#array_parents] => Array
+                        (
+                            [0] => form_token
+                        )
+
+                    [#weight] => 0.004
+                    [#processed] => 
+                    [#required] => 
+                    [#attributes] => Array
+                        (
+                        )
+
+                    [#title_display] => before
+                    [#name] => form_token
+                    [#value] => CJwG1RM1gpYofZ7Ty7oBDrExjKWEX--H4bjfkiv0wdI
+                    [#needs_validation] => 1
+                    [#sorted] => 1
+                    [#validated] => 1
+                )
+
+            [form_id] => Array
+                (
+                    [#type] => hidden
+                    [#value] => engine_engine_form
+                    [#id] => edit-engine-engine-form
+                    [#parents] => Array
+                        (
+                            [0] => form_id
+                        )
+
+                    [#input] => 1
+                    [#process] => Array
+                        (
+                            [0] => ajax_process_form
+                        )
+
+                    [#theme] => hidden
+                    [#defaults_loaded] => 1
+                    [#tree] => 
+                    [#array_parents] => Array
+                        (
+                            [0] => form_id
+                        )
+
+                    [#weight] => 0.005
+                    [#processed] => 1
+                    [#required] => 
+                    [#attributes] => Array
+                        (
+                        )
+
+                    [#title_display] => before
+                    [#name] => form_id
+                    [#ajax_processed] => 
+                    [#sorted] => 1
+                    [#validated] => 1
+                )
+
+            [#id] => engine-engine-form
+            [#method] => post
+            [#action] => /lapa/engine-form
+            [#theme_wrappers] => Array
+                (
+                    [0] => form
+                )
+
+            [#tree] => 
+            [#parents] => Array
+                (
+                )
+
+            [#validate] => Array
+                (
+                    [0] => engine_engine_form_validate
+                )
+
+            [#submit] => Array
+                (
+                    [0] => engine_engine_form_submit
+                )
+
+            [#theme] => Array
+                (
+                    [0] => engine_engine_form
+                )
+
+            [#processed] => 
+            [#defaults_loaded] => 1
+            [#required] => 
+            [#attributes] => Array
+                (
+                )
+
+            [#title_display] => before
+            [#array_parents] => Array
+                (
+                )
+
+            [#sorted] => 1
+            [#validated] => 1
+        )
+
+    [process_input] => 1
+    [triggering_element] => Array
+        (
+            [#type] => submit
+            [#value] => Submit
+            [#input] => 1
+            [#name] => op
+            [#button_type] => submit
+            [#executes_submit_callback] => 1
+            [#limit_validation_errors] => 
+            [#process] => Array
+                (
+                    [0] => ajax_process_form
+                )
+
+            [#theme_wrappers] => Array
+                (
+                    [0] => button
+                )
+
+            [#defaults_loaded] => 1
+            [#tree] => 
+            [#parents] => Array
+                (
+                    [0] => submit
+                )
+
+            [#array_parents] => Array
+                (
+                    [0] => submit
+                )
+
+            [#weight] => 0.002
+            [#processed] => 
+            [#required] => 
+            [#attributes] => Array
+                (
+                )
+
+            [#title_display] => before
+            [#id] => edit-submit
+        )
+
+    [clicked_button] => Array
+        (
+            [#type] => submit
+            [#value] => Submit
+            [#input] => 1
+            [#name] => op
+            [#button_type] => submit
+            [#executes_submit_callback] => 1
+            [#limit_validation_errors] => 
+            [#process] => Array
+                (
+                    [0] => ajax_process_form
+                )
+
+            [#theme_wrappers] => Array
+                (
+                    [0] => button
+                )
+
+            [#defaults_loaded] => 1
+            [#tree] => 
+            [#parents] => Array
+                (
+                    [0] => submit
+                )
+
+            [#array_parents] => Array
+                (
+                    [0] => submit
+                )
+
+            [#weight] => 0.002
+            [#processed] => 
+            [#required] => 
+            [#attributes] => Array
+                (
+                )
+
+            [#title_display] => before
+            [#id] => edit-submit
+        )
+
+)

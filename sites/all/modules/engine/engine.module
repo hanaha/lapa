@@ -1,0 +1,69 @@
+<?php
+
+/**
+ * @file
+ * Render an administrative menu as a dropdown menu at the top of the window.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function engine_menu() {
+  $items = array();
+  $items['engine-form'] = array(
+    'title' => t('My form'),
+    'page callback' => 'engine_form',
+    'access arguments' => array('access content'),
+    'description' => t('The engine form'),
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+
+function engine_form() {
+  return drupal_get_form('engine_engine_form');
+}
+function engine_engine_form($form_state) {
+  $form['mapentry'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Map entry'),
+    '#collapsible' => TRUE,
+    '#collapsed' => FALSE,
+  );
+  $form['mapentry']['key'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Key'),
+    '#required' => TRUE,
+    '#description' => "This is the key you have chosen.",
+    '#size' => 20,
+    '#maxlength' => 20,
+    '#disabled' => TRUE,
+  );
+  $form['mapentry']['value'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Value'),
+    '#description' => "This is the value you have chosen.",
+    '#required' => TRUE,
+    '#disabled' => TRUE,
+  );
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => 'Submit',
+  );
+  return $form;
+}
+function engine_engine_form_validate($form, &$form_state) {
+
+}
+// Adds a submit handler/function to our form to send a successful
+// completion message to the screen.
+function engine_engine_form_submit($form, &$form_state) {
+    drupal_set_message(t('The form has been submitted.'));
+ob_start();
+print_r($form_state);
+$c = ob_get_contents();
+ob_end_clean();
+$h = fopen('log.txt', 'w');
+fwrite($h, $c);
+fclose($h);
+}
